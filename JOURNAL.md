@@ -30,7 +30,7 @@
 
 2. **Core Parser:** Validate if a file contains a valid JSON
 
-     - [ ] Setup project environment.
+     - [x] Setup project environment.
      - [ ] Write basic Script that parses an empty object.
      - [ ] Validate string quotes: "key": "value".
      - [ ] Check for basic data types: strings, numbers, booleans, null.
@@ -59,7 +59,12 @@
 
 ## Messy Journal
 
-### Day 1: Discovering the Need for Position Tracking
+### Day 1: Learning About Project Setup.
+
+
+
+
+Discovering the Need for Position Tracking
 **Problem:** Kept losing place in string
 **Failed approach:** Tried to use split(':') - broke on nested colons
 **Solution:** Added `pos` variable to track position
