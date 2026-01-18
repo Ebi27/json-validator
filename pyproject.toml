@@ -1,0 +1,39 @@
+[project]
+name = "json-validator"
+version = "1.0.0"
+description = "A fast, extensible JSON validation engine"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "black>=25.12.0",
+    "ruff>=0.14.10",
+    "pytest>=8.4.1",
+    "pytest-cov>=7.0.0",
+    "pre-commit>=4.5.0"
+]
+
+# Tool configs
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.pytest_cache
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W"]
+ignore = []
+exclude = ["tests/*", "build/*", "dist/*"]
